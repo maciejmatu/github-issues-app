@@ -1,5 +1,8 @@
 ## Github Issues App
 
+#### Description
+Supports browsers from ie9. Normally I don't put built files in repo, but this is an exception. Date element in issues list, is put every 3 items, since I only wanted to display it to show styling. The only needed files (e.g. to upload on a server) are index.html, styles.html and assets folder.
+
 #### Building
 To develop you must first install the packages with `npm install`.
 There are three commands available:
@@ -37,5 +40,12 @@ To automate rendering, and keep the html file clean, I used render-cli.
 - navigation__additional-text
 ##### List
 - list
-- list--with-dates
+- list--without-dates
 - list__item
+- list__item__title
+- list__date
+##### Star
+- star
+- star__toggle
+- star__inside
+- star__outside

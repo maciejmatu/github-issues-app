@@ -8,21 +8,32 @@
 	&__toggle {
 		display: none;
 
-		&:checked + .star__inside {
-			transform: translate(-50%, -50%) scale(0);
+		&:checked ~ .star__inside {
+			display: none;
+		}
+
+		&:checked ~ .star__outside {
+			fill: $color-blue;
 		}
 	}
 
 	&__inside {
+		cursor: pointer;
+		backface-visibility: hidden;
 		top: 50%;
 		left: 50%;
 		position: absolute;
-		transform: translate(-50%, -50%) scale(1);
-		transition: transform .3s ease;
+		transform: translate(-50%, -50%) scale(0.8);
 		fill: $color-white;
 	}
 
 	&__outside {
-		fill: $color-blue;
+		cursor: pointer;
+		backface-visibility: hidden;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		fill: $color-dark-grey;
 	}
 }

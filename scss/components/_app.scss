@@ -41,5 +41,6 @@ $_border-radius: 10px;
 		border-radius: 0 $_border-radius $_border-radius 0;
 		flex: 1 0 0;
 		background-color: $color-grey;
+		overflow: scroll;
 	}
 }

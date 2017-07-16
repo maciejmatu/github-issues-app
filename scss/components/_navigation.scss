@@ -32,11 +32,11 @@
 			cursor: pointer;
 		}
 
-		// &--active,
-		// &--active:hover {
-		// 	background-color: $color-light-blue;
-		// 	cursor: default;
-		// }
+		&--active,
+		&--active:hover {
+			background-color: $color-light-blue;
+			cursor: default;
+		}
 
 	}
 

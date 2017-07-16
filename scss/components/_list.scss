@@ -16,8 +16,19 @@
 		}
 	}
 
-	&--with-dates {
+	&--without-dates {
+		& .list__date {
+			display: none;
+		}
+	}
 
+	&__date {
+		list-style: none;
+		padding: 5px 0;
+		display: block;
+		color: $color-black;
+		opacity: 0.5;
+		font-size: 11px;
 	}
 
 	&__item {
@@ -29,8 +40,8 @@
 		border: 1px solid $color-dark-grey;
 		margin-bottom: 5px;
 
-		&--title {
-			// font-size: 15px;
+		&__title {
+			margin: 0;
 		}
 	}
 }

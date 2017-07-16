@@ -4,17 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run render && scss ./scss/main.scss ./style.css --sourcemap=none -t expanded",
+    "start": "npm run watch",
+    "build": "npm run render && scss ./scss/main.scss ./style.css --sourcemap=none -t expanded && npm run prefix",
     "watch": "watch 'npm run build' ./scss ./template",
     "watch:scss": "scss --watch ./scss/main.scss:./style.css --sourcemap=none -t expanded",
+    "prefix": "postcss style.css --use autoprefixer -o ./style.css --no-map",
     "render": "render ./template/template.html > index.html --context issues:issues.json --engine lodash"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "lodash": "^4.17.4",
+    "postcss-cli": "^4.1.0",
     "render-cli": "^0.3.2",
     "scss": "^0.2.4",
     "watch": "^1.0.2"
-  }
+  },
+  "browserslist": [
+    "> 5%",
+    "ie 9",
+    "last 2 versions"
+  ]
 }

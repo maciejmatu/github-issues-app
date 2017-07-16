@@ -7,7 +7,7 @@
 		<title>Github Issues</title>
 	</head>
 	<body>
-
+		<div class="background"></div>
 		<div class="app">
 			<aside class="app__sider">
 				<div class="window-buttons">
@@ -16,37 +16,38 @@
 					<button class="window-buttons__button window-buttons__button--maximize"></button>
 				</div>
 				<nav class="navigation js-nav" data-filter="all">
-					<div class="navigation__item js-show-all">
+					<a href="#" class="navigation__item js-show-all">
 						<img src="./assets/icon-github.svg" class="navigation__icon" />
 						<div class="navigation__text">All</div>
 						<div class="navigation__additional-text"><%= issues.length %></div>
-					</div>
-					<div div class="navigation__item js-show-open">
+					</a>
+					<a href="#" div class="navigation__item js-show-open">
 						<img src="./assets/icon-open-issue.svg" class="navigation__icon" />
 						<div class="navigation__text">Open</div>
 						<div class="navigation__additional-text"><%= issues.filter(issue => issue.state === 'open').length %></div>
-					</div>
-					<div class="navigation__item js-show-closed">
+					</a>
+					<a href="#" class="navigation__item js-show-closed">
 						<img src="./assets/icon-closed-issue.svg" class="navigation__icon" />
 						<div class="navigation__text">Closed</div>
 						<div class="navigation__additional-text"><%= issues.filter(issue => issue.state === 'closed').length %></div>
-					</div>
+					</a>
 				</nav>
 			</aside>
 			<div class="app__content">
 				<ul class="list js-list" data-filter="all">
-					<% issues.forEach(issue => { %>
-					<li class="list__item" data-state="<%= issue.state %>" data-date="<%= issue.created_at %>">
+					<% issues.forEach((issue, i) => { %>
+					<% if (i % 3 == 0) { %>
+					<li class="list__date"><time><%= issue.created_at.slice(0, 10) %></time></li>
+					<% } %>
+					<li class="list__item" data-state="<%= issue.state %>">
 						<div class="star">
 							<label>
 								<input type="checkbox" class="star__toggle" />
-								<svg class="star__inside" height="16" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__outside" height="16" width="17"><use xlink:href="#icon-star"></use></svg>
+								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
+								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
 							</label>
 						</div>
-						<div class="list__item--title">
-							<%= issue.title %>
-						</div>
+						<p class="list__item__title"><%= issue.title %></p>
 					</li>
 					<% }) %>
 				</ul>
@@ -55,14 +56,7 @@
 
 		<div style="display: none">
 			<svg id="icon-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
-			<defs> <style>
-				.cls-1 {
-					fill: inherit;
-					stroke: inherit;
-					fill-rule: evenodd;
-				}
-				</style>
-			</defs>
+			<defs><style> .cls-1 { fill: inherit; stroke: inherit; fill-rule: evenodd; }</style></defs>
 			<path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " class="cls-1"/>
 			</svg>
 		</div>
