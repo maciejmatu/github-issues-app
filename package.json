@@ -1,8 +1,8 @@
 {
-  "name": "el_passion_assignment",
+  "name": "github-issues-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Sample issues app",
+  "main": "index.html",
   "scripts": {
     "start": "npm run watch",
     "build": "npm run render && scss ./scss/main.scss ./style.css --sourcemap=none -t expanded && npm run prefix",
@@ -11,7 +11,7 @@
     "prefix": "postcss style.css --use autoprefixer -o ./style.css --no-map",
     "render": "render ./template/template.html > index.html --context issues:issues.json --engine lodash"
   },
-  "author": "",
+  "author": "Maciej Matuszewski",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
