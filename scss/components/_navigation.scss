@@ -1,0 +1,57 @@
+.navigation {
+
+	&[data-filter="all"] {
+		.js-show-all {
+			background-color: $color-light-blue;
+			cursor: default;
+		}
+	}
+
+	&[data-filter="open"] {
+		.js-show-open {
+			background-color: $color-light-blue;
+			cursor: default;
+		}
+	}
+
+	&[data-filter="closed"] {
+		.js-show-closed {
+			background-color: $color-light-blue;
+			cursor: default;
+		}
+	}
+
+	&__item {
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+
+		&:hover {
+			background-color: rgba($color-light-blue, 0.4);
+			cursor: pointer;
+		}
+
+		// &--active,
+		// &--active:hover {
+		// 	background-color: $color-light-blue;
+		// 	cursor: default;
+		// }
+
+	}
+
+	&__icon {
+		width: 17px;
+	}
+
+	&__text {
+		color: $color-white;
+		margin-left: 10px;
+		flex: 1 1 auto;
+	}
+
+	&__additional-text {
+		color: $color-white;
+		opacity: 0.5;
+	}
+}

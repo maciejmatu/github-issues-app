@@ -1,0 +1,36 @@
+.list {
+	padding: 10px 15px;
+	margin: 0;
+	overflow: scroll;
+	height: 100%;
+
+	&[data-filter="open"] {
+		& > [data-state="closed"] {
+			display: none;
+		}
+	}
+
+	&[data-filter="closed"] {
+		& > [data-state="open"] {
+			display: none;
+		}
+	}
+
+	&--with-dates {
+
+	}
+
+	&__item {
+		border-radius: 5px;
+		color: $color-black;
+		list-style: none;
+		background-color: white;
+		padding: 10px;
+		border: 1px solid $color-dark-grey;
+		margin-bottom: 5px;
+
+		&--title {
+			// font-size: 15px;
+		}
+	}
+}

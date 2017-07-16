@@ -1,0 +1,12 @@
+@import 'helpers/variables';
+@import 'helpers/normalize';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'global';
+
+// import components
+@import 'components/app';
+@import 'components/window-buttons';
+@import 'components/navigation';
+@import 'components/list';
+@import 'components/star';

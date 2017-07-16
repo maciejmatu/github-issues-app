@@ -1,0 +1,124 @@
+$_shade-btn-percentage: 20%;
+$_shade-btn-shape-percentage: 50%;
+
+.window-buttons {
+	padding: 10px;
+	background-color: $color-dark-blue;
+	@include clearfix;
+
+	&:hover {
+		// show button shapes, when hovered
+		& > .window-buttons__button {
+			&:before,
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__button {
+		float: left;
+		outline: none;
+		padding: 0;
+		margin: 5px;
+		border: 0;
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		display: block;
+		background-color: $color-grey;
+		position: relative;
+		cursor: pointer;
+
+		&:active {
+			background-color: shade($color-grey, $_shade-btn-percentage);
+		}
+
+		&:before,
+		&:after {
+			opacity: 0;
+		}
+
+		// show button shape on hover, also when button is not in .window-buttons block
+		&:hover {
+			&:before,
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		&--close {
+			background-color: $color-red;
+
+			&:active {
+				background-color: shade($color-red, $_shade-btn-percentage);
+			}
+
+			&:after,
+			&:before {
+				content: '';
+				width: 7px;
+				height: 1px;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: shade($color-red, $_shade-btn-shape-percentage);
+			}
+
+			&:before {
+				transform: translate(-50%, -50%) rotate(-45deg);
+			}
+
+			&:after {
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+		}
+
+		&--minimize {
+			background-color: $color-yellow;
+
+			&:active {
+				background-color: shade($color-yellow, $_shade-btn-percentage);
+			}
+
+			&:before {
+				content: '';
+				width: 7px;
+				height: 1px;
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background-color: shade($color-yellow, $_shade-btn-shape-percentage);
+			}
+		}
+
+		&--maximize {
+			background-color: $color-green;
+
+			&:active {
+				background-color: shade($color-green, $_shade-btn-percentage);
+			}
+
+			&:after,
+			&:before {
+				content: '';
+				width: 7px;
+				height: 1px;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: shade($color-green, $_shade-btn-shape-percentage);
+			}
+
+			&:after {
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+		}
+	}
+}

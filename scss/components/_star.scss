@@ -1,0 +1,28 @@
+.star {
+	position: relative;
+	float: right;
+	width: 17px;
+	height: 17px;
+	@include clearfix();
+
+	&__toggle {
+		display: none;
+
+		&:checked + .star__inside {
+			transform: translate(-50%, -50%) scale(0);
+		}
+	}
+
+	&__inside {
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%) scale(1);
+		transition: transform .3s ease;
+		fill: $color-white;
+	}
+
+	&__outside {
+		fill: $color-blue;
+	}
+}
