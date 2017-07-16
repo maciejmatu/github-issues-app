@@ -315,6 +315,7 @@ body {
           flex: 1 0 0;
   background-color: #f6f6f6;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .window-buttons {
@@ -438,11 +439,16 @@ body {
   background-color: #292a48;
   cursor: default;
 }
+.navigation__wrapper {
+  margin: 0;
+  padding: 0;
+}
 .navigation__item {
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -474,7 +480,6 @@ body {
 .list {
   padding: 10px 15px;
   margin: 0;
-  overflow: scroll;
   height: 100%;
 }
 .list[data-filter="open"] > [data-state="closed"] {
@@ -532,23 +537,16 @@ body {
   cursor: pointer;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  top: 50%;
-  left: 50%;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-      -ms-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
   fill: #fff;
 }
 .star__outside {
   cursor: pointer;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  top: 50%;
-  left: 50%;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  fill: #e0e0e0;
+  fill: #b3b3b3;
 }

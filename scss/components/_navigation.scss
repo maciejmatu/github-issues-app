@@ -21,9 +21,15 @@
 		}
 	}
 
+	&__wrapper {
+		margin: 0;
+		padding: 0;
+	}
+
 	&__item {
 		padding: 15px;
 		display: flex;
+		list-style: none;
 		align-items: center;
 		text-decoration: none;
 

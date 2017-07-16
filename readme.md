@@ -33,6 +33,7 @@ To automate rendering, and keep the html file clean, I used render-cli.
 - window-buttons__button--maximize
 ##### Navigation
 - navigation
+- navigation__wrapper
 - navigation__item
 - navigation__item--active
 - navigation__icon

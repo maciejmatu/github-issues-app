@@ -15,7 +15,7 @@
 					<button class="window-buttons__button window-buttons__button--minimize"></button>
 					<button class="window-buttons__button window-buttons__button--maximize"></button>
 				</div>
-				<nav class="navigation js-nav" data-filter="all">
+				<!--<nav class="navigation js-nav" data-filter="all">
 					<a href="#" class="navigation__item js-show-all">
 						<img src="./assets/icon-github.svg" class="navigation__icon" />
 						<div class="navigation__text">All</div>
@@ -31,7 +31,28 @@
 						<div class="navigation__text">Closed</div>
 						<div class="navigation__additional-text">13</div>
 					</a>
+				</nav> -->
+
+				<nav class="navigation js-nav" data-filter="all">
+					<ul class="navigation__wrapper">
+						<li class="navigation__item js-show-all">
+							<img src="./assets/icon-github.svg" class="navigation__icon" />
+							<div class="navigation__text">All</div>
+							<div class="navigation__additional-text">22</div>
+						</li>
+						<li div class="navigation__item js-show-open">
+							<img src="./assets/icon-open-issue.svg" class="navigation__icon" />
+							<div class="navigation__text">Open</div>
+							<div class="navigation__additional-text">9</div>
+						</li>
+						<li class="navigation__item js-show-closed">
+							<img src="./assets/icon-closed-issue.svg" class="navigation__icon" />
+							<div class="navigation__text">Closed</div>
+							<div class="navigation__additional-text">13</div>
+						</li>
+					</ul>
 				</nav>
+
 			</aside>
 			<div class="app__content">
 				<ul class="list js-list" data-filter="all">
