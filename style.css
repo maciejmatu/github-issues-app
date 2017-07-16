@@ -369,18 +369,15 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #802d28;
 }
 .window-buttons__button--close:before {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-      -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 .window-buttons__button--close:after {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
-      -ms-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
 .window-buttons__button--minimize {
@@ -398,7 +395,6 @@ body {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #805e0e;
 }
@@ -417,13 +413,11 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #006723;
 }
 .window-buttons__button--maximize:after {
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
-      -ms-transform: translate(-50%, -50%) rotate(90deg);
           transform: translate(-50%, -50%) rotate(90deg);
 }
 
@@ -539,7 +533,6 @@ body {
           backface-visibility: hidden;
   position: absolute;
   -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
           transform: scale(0.8);
   fill: #fff;
 }
