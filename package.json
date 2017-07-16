@@ -23,7 +23,6 @@
   },
   "browserslist": [
     "> 5%",
-    "ie 9",
     "last 2 versions"
   ]
 }

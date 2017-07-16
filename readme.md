@@ -1,7 +1,7 @@
 ## Github Issues App
 
 #### Description
-Supports browsers from ie9. Normally I don't put built files in repo, but this is an exception. Date element in issues list, is put every 3 items, since I only wanted to display it to show styling. The only needed files (e.g. to upload on a server) are index.html, styles.html and assets folder.
+Support from ie10. Works from edge up. Normally I don't put built files in repo, but this is an exception. Date element in issues list, is put every 3 items, since I only wanted to display it to show styling. The only needed files (e.g. to upload on a server) are index.html, styles.html and assets folder.
 
 #### Building
 To develop you must first install the packages with `npm install`.
