@@ -1,0 +1,20 @@
+{
+  "name": "el_passion_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run render && scss ./scss/main.scss ./style.css --sourcemap=none -t expanded",
+    "watch": "watch 'npm run build' ./scss ./template",
+    "watch:scss": "scss --watch ./scss/main.scss:./style.css --sourcemap=none -t expanded",
+    "render": "render ./template/template.html > index.html --context issues:issues.json --engine lodash"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "render-cli": "^0.3.2",
+    "scss": "^0.2.4",
+    "watch": "^1.0.2"
+  }
+}
