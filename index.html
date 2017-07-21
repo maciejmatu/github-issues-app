@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 		<title>Github Issues</title>
 	</head>
 	<body>
@@ -37,290 +38,9 @@
 				</nav>
 
 			</aside>
-			<div class="app__content">
-				<ul class="list js-list" data-filter="all">
-					
-					
-					<li class="list__date"><time>2017-07-15</time></li>
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Make reducer generics more generic</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Feature/typescript todo example</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Provide correct test description for 2 of the tests</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-07-14</time></li>
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Add library size check in CI</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Update AsyncActions.md</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Updated 1 createStore's test description</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-07-13</time></li>
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Remove usage of `check:src` npm script from contributing.md</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Can't export combineReducers with TypeScript as AnyAction is private</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">File reducers not found at index.js of todo example</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-07-13</time></li>
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Remove `src` directory from npm package</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Allow ReduxStore to callback subscribers event methods, not only the onStateChange(StoreState).</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">redux cannot be AoT compiled by angular-cli</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-07-12</time></li>
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">How to define the initialState correct for a react component?</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Add new discussion links to Performance</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Redux : Testing async functions</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-07-11</time></li>
-					
-					<li class="list__item" data-state="closed">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Add new links to Performance FAQ section</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Fix the definition of 'AnyAction'</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">TypeScript: Can't use strict custom Action types any more</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-07-14</time></li>
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Remove @private flag on AnyAction type definition</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Update UsageWithReactRouter.md</p>
-					</li>
-					
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">"dispatch" passed to middlewares only passes through first argument</p>
-					</li>
-					
-					
-					<li class="list__date"><time>2017-06-29</time></li>
-					
-					<li class="list__item" data-state="open">
-						<div class="star">
-							<label>
-								<input type="checkbox" class="star__toggle" />
-								<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-								<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
-							</label>
-						</div>
-						<p class="list__item__title">Updated the definition of 'Reducer' and 'Dispatch' for TypeScript 2.3+</p>
-					</li>
-					
-				</ul>
+
+			<div class="app__content js-issues-container">
+				<div class="loader"></div>
 			</div>
 		</div>
 
@@ -331,30 +51,32 @@
 			</svg>
 		</div>
 
-		<script>
-			'use strict';
-
-			(function() {
-				var query = document.querySelector.bind(document);
-				var queryAll = document.querySelectorAll.bind(document);
-
-				var nodes = {
-					list: query('.js-list'),
-					nav: query('.js-nav'),
-					showAllTrigger: query('.js-show-all'),
-					showOpenTrigger: query('.js-show-open'),
-	 				showClosedTrigger: query('.js-show-closed')
-				};
-
-				function changeListFilter(mode) {
-					nodes.nav.setAttribute('data-filter', mode);
-					nodes.list.setAttribute('data-filter', mode);
-				}
-
-				nodes.showAllTrigger.addEventListener('click', changeListFilter.bind(nodes.showAllTrigger, 'all'));
-				nodes.showOpenTrigger.addEventListener('click', changeListFilter.bind(nodes.showOpenTrigger, 'open'));
-				nodes.showClosedTrigger.addEventListener('click', changeListFilter.bind(nodes.showClosedTrigger, 'closed'));
-			})();
+		<script type="text/template" id="list_template">
+			<% if (typeof error !== 'undefined') { %>
+			<div class="error-message">
+				<%= error %>
+			</div>
+			<% } else { %>
+			<ul class="list js-list" data-filter="all">
+				<% issues.forEach((issue, i) => { %>
+				<% if (i % 3 == 0) { %>
+				<li class="list__date"><time><%= issue.created_at.slice(0, 10) %></time></li>
+				<% } %>
+				<li class="list__item" data-state="<%= issue.state %>">
+					<div class="star">
+						<label>
+							<input type="checkbox" class="star__toggle" />
+							<svg class="star__outside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
+							<svg class="star__inside" height="17" width="17"><use xlink:href="#icon-star"></use></svg>
+						</label>
+					</div>
+					<p class="list__item__title"><%= issue.title %></p>
+				</li>
+				<% }) %>
+			</ul>
+			<% } %>
 		</script>
+
+		<script src="./app.js"></script>
 	</body>
 </html>

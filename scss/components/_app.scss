@@ -42,6 +42,7 @@ $_border-radius: 10px;
 		flex: 1 0 0;
 		background-color: $color-grey;
 		overflow: scroll;
+		position: relative;
 		overflow-x: hidden;
 	}
 }

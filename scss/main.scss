@@ -2,6 +2,7 @@
 @import 'helpers/normalize';
 @import 'helpers/functions';
 @import 'helpers/mixins';
+@import 'helpers/animations';
 @import 'global';
 
 // import components
@@ -10,3 +11,5 @@
 @import 'components/navigation';
 @import 'components/list';
 @import 'components/star';
+@import 'components/loader';
+@import 'components/error-message';

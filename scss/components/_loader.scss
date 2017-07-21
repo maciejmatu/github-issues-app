@@ -1,0 +1,13 @@
+.loader {
+	position: absolute;
+	top: calc(50% - 5px);
+	left: calc(50% - 5px);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	border-top-color: $color-blue;
+	border-left-color: $color-blue;
+	display: block;
+	animation: spin 1s infinite;
+}
